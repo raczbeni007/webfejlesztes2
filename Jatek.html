@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+    >
+    <link rel="stylesheet" href="reszponziv.css" >
+    <link rel="stylesheet" href="design.css" >
+    <link rel="icon" type="image/x-icon" href="logo.png" >
+    <title>Játék</title>
+    <script src="java.js"></script>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"> <img src="logo.png" alt="Logó" ></a>
+    </header>
+
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Főoldal</a></li>
+          <li><a href="Gaudi.html">Antoni Gaudí</a></li>
+          <li><a href="Gropius.html">Walter Gropius</a></li>
+          <li><a href="Wright.html">Frank Lloyd Wright</a></li>
+          <li><a href="Hirlevel.html">Hírlevél</a></li>
+          <li><a class="active" href="#">Játék</a></li>
+          <li><a href="Inspiracio.html">Inspiráció</a></li>
+        </ul>
+      </nav>
+
+      <article class="bevezeto">
+        <h2>Játék</h2>
+        <p>
+          Mindannyiunknak van álomháza. Nézze meg, hogy pénze lekötésével el
+          tudná-e érni céljait!
+        </p>
+      </article>
+
+      <article class="form">
+        <form>
+          <p>
+            <label
+              >Befektetett pénzösszeg:
+              <input
+                type="text"
+                maxlength="8"
+                size="45"
+                placeholder="Kérjük, írja ide a befektetendő pénzösszeget!"
+                id="p"
+                class="mezo"
+                required
+            ></label>
+          </p>
+          <p>
+            <label
+              >Futamidő (év):
+              <input
+                type="text"
+                maxlength="2"
+                size="45"
+                placeholder="Kérjük, írja ide a befektetés hosszát!"
+                id="e"
+                class="mezo"
+                required
+            ></label>
+          </p>
+          <p>
+            <label
+              >Kamatláb (%):
+              <input
+                type="text"
+                maxlength="3"
+                size="45"
+                placeholder="Kérjük, írja ide a kamatot százalékban megadva!"
+                id="sz"
+                class="mezo"
+                required
+            ></label>
+          </p>
+          <p>Kamatszámítás módja</p>
+          <label
+            ><input type="radio" name="ua" value="i" id="kk" class="kisgomb" >
+            Kamatos kamat</label
+          >
+          <label>
+            <input type="radio" name="ua" value="n" id="ek" class="kisgomb" >
+            Egyszerű kamat
+          </label>
+          <br >
+          <button type="submit" class="kgomb" onclick="befektetes1()">
+            Kiszámítás
+          </button>
+          <button type="reset" class="reset">Alaphelyzetbe állítás</button>
+        </form>
+      </article>
+
+      <footer>Az oldal oktatási célokat szolgál.</footer>
+    </div>
+  </body>
+</html>

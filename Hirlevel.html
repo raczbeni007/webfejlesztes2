@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+    >
+    <link rel="stylesheet" href="reszponziv.css" >
+    <link rel="stylesheet" href="design.css" >
+    <link rel="icon" type="image/x-icon" href="logo.png" >
+    <title>Hírlevél</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"> <img src="logo.png" alt="Logó" ></a>
+    </header>
+
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Főoldal</a></li>
+          <li><a href="Gaudi.html">Antoni Gaudí</a></li>
+          <li><a href="Gropius.html">Walter Gropius</a></li>
+          <li><a href="Wright.html">Frank Lloyd Wright</a></li>
+          <li><a class="active" href="#">Hírlevél</a></li>
+          <li><a href="Jatek.html">Játék</a></li>
+          <li><a href="Inspiracio.html">Inspiráció</a></li>
+        </ul>
+      </nav>
+
+      <article class="bevezeto">
+        <h2>HÍRLEVÉL</h2>
+        <p>
+          Hírlevelünk célja, hogy az építészet iránt érdeklődők értesülhessenek
+          a legfrissebb irányzatokról, építészeti mozgalmakról.
+        </p>
+      </article>
+
+      <article class="form">
+        <form method="post" action="http://szamtud.uni-corvinus.hu/receive.php">
+          <p>
+            <label
+              >Megszólítás:
+              <select name="megszolitas" size="1" class="mezo">
+                <option value="semmi">-</option>
+                <option value="dr">Dr.</option>
+                <option value="mr">Mr.</option>
+                <option value="mrs">Mrs.</option>
+                <option value="ms">Ms.</option>
+              </select></label
+            >
+          </p>
+
+          <p>
+            <label
+              >Vezetéknév:
+              <input
+                type="text"
+                name="vnev"
+                maxlength="20"
+                size="30"
+                placeholder="Kérjük, írja ide vezetéknevét!"
+                class="mezo"
+                required
+            ></label>
+          </p>
+          <p>
+            <label
+              >Keresztnév:
+              <input
+                type="text"
+                name="knev"
+                maxlength="20"
+                size="30"
+                placeholder="Kérjük, írja ide keresztnevét!"
+                class="mezo"
+                required
+            ></label>
+          </p>
+          <p>
+            <label
+              >Email cím:
+              <input
+                type="email"
+                name="email"
+                size="30"
+                placeholder="Kérjük, írja ide email címét!"
+                class="mezo"
+                required
+            ></label>
+          </p>
+
+          <p>
+            <label
+              >Születési dátum: <input type="date" name="szul" class="mezo"
+            ></label>
+          </p>
+          <p>Részt kíván venni építészet workshopjainkon?</p>
+          <label
+            ><input type="radio" name="workshop" value="i" class="kisgomb" >
+            igen
+          </label>
+          <label
+            ><input
+              type="radio"
+              name="workshop"
+              value="n"
+              checked
+              class="kisgomb"
+            >
+            nem
+          </label>
+
+          <p>
+            <label
+              >Támogatás a szerkesztőknek (opcionális)
+              <input
+                type="number"
+                name="tamogatas"
+                min="0"
+                max="10000000"
+                step="500"
+                class="mezo"
+            ></label>
+          </p>
+          <p>
+            <label
+              ><input
+                type="checkbox"
+                name="adatkezelesi tajekoztato"
+                value="i"
+                required
+                class="kisgomb2"
+              >
+              Az
+              <a
+                href="Tájékoztató.html"
+                style="text-decoration: underline"
+                class="ak"
+                >Adatkezelési Tájékoztatót</a
+              >
+              megismertem és elfogadom.</label
+            >
+          </p>
+
+          <button type="submit" class="kgomb">Feliratkozás</button>
+          <button type="reset" class="reset">Alaphelyzetbe állítás</button>
+        </form>
+      </article>
+    </div>
+
+    <footer>Az oldal oktatási célokat szolgál.</footer>
+  </body>
+</html>

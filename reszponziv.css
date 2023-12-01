@@ -1,0 +1,84 @@
+*{
+box-sizing: border-box;
+}
+
+.container{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+}
+
+nav{
+flex: 1 1 100%;
+}
+
+article{
+flex: 1 1 100%;
+}
+
+div.gallery{
+width: 100%;
+}
+
+div.gallery img{
+width: 100%;
+}
+
+div.gallery2{
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+width: 100%;
+}
+
+div.gallery2 img{
+width: 100%;
+}
+
+aside{
+width: 100%;
+}
+
+.alairas{
+width: 70%;
+padding-top: 25px;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+@media all and (min-width: 600px) {
+    /*pc*/
+    nav {
+        flex-basis: 100%;
+    }
+    
+	nav li {
+	float: left;
+	}
+
+    article.bevezeto {
+        flex-basis: 58%;  
+    }
+    
+    aside.bevezeto {
+        flex-basis: 38%;   
+    }
+    
+    div.gallery img{
+	width: 24.6%;
+	}
+    
+	div.gallery2{
+	flex-direction: row;
+	justify-content: space-around;
+	}
+	
+	div.gallery2 img{
+	width: 32%;
+	}
+
+    th, td {
+    border-bottom: 1px solid #191919;
+    }
+}

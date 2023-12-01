@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="utf-8" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Quicksand"
+    >
+    <link rel="stylesheet" href="reszponziv.css" >
+    <link rel="stylesheet" href="design.css" >
+    <link rel="icon" type="image/x-icon" href="logo.png" >
+
+    <script src="jquery-3.7.1.js"></script>
+    <script src="galleria.js"></script>
+    <script src="galleria.classic.js"></script>
+    <script>
+      $(document).ready(function () {
+        Galleria.run("#images", {});
+      });
+    </script>
+
+    <title>Inspiráció</title>
+  </head>
+
+  <body>
+    <header>
+      <a href="index.html"> <img src="logo.png" alt="Logó" ></a>
+    </header>
+
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="index.html">Főoldal</a></li>
+          <li><a href="Gaudi.html">Antoni Gaudí</a></li>
+          <li><a href="Gropius.html">Walter Gropius</a></li>
+          <li><a href="Wright.html">Frank Lloyd Wright</a></li>
+          <li><a href="Hirlevel.html">Hírlevél</a></li>
+          <li><a href="Jatek.html">Játék</a></li>
+          <li><a class="active" href="#">Inspiráció</a></li>
+        </ul>
+      </nav>
+      <article class="bevezeto">
+        <h2>INSPIRÁCIÓ</h2>
+        <p>
+          Az ihlet megtalálása az építészetben rendkívül fontos szerepet
+          játszik, mivel az építészet nem csupán funkcionális szükségleteket
+          elégít ki, hanem a kreativitás és az esztétika területén is
+          kibontakozik. Gyűjtsön inspirációt, hogy egyedülálló és emlékezetes
+          terveket hozhasson létre!
+        </p>
+      </article>
+      <article id="images" class="bevezeto galleria">
+        <img src="1.jpg" alt="Épület" title="A kép címe" >
+        <img src="2.jpg" alt="Épület" title="A kép címe" >
+        <img src="3.jpg" alt="Épület" title="A kép címe" >
+        <img src="4.jpg" alt="Épület" title="A kép címe" >
+        <img src="5.jpg" alt="Épület" title="A kép címe" >
+        <img src="6.jpg" alt="Épület" title="A kép címe" >
+        <img src="7.jpg" alt="Épület" title="A kép címe" >
+        <img src="8.jpg" alt="Épület" title="A kép címe" >
+        <img src="9.jpg" alt="Épület" title="A kép címe" >
+        <img src="10.jpg" alt="Épület" title="A kép címe" >
+        <img src="11.jpg" alt="Épület" title="A kép címe" >
+      </article>
+
+      <footer>Az oldal oktatási célokat szolgál.</footer>
+    </div>
+  </body>
+</html>

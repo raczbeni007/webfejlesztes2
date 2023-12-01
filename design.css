@@ -1,0 +1,275 @@
+html{
+color: white;
+background-color: #191919;
+text-align: justify;
+font-family: Quicksand, Times New Roman;
+}
+
+body{
+margin: 0;
+}
+
+header{
+background-color: black;
+height: 7vh;
+padding-top: 0.5vh;
+}
+
+footer{
+display: flex;
+width: 100%;
+font-size: 0.8em;
+background-color: black;
+height: 7vh;
+justify-content: center;
+align-items: center;
+margin-top: auto;
+}
+
+nav{
+background-color: black;
+}
+
+nav ul{
+margin: 0;
+padding: 0;
+display: table;
+margin-right: auto;
+margin-left: auto;
+margin-bottom: 1vh;
+}
+
+nav ul li{
+list-style-type: none;
+text-align: center;
+padding: 1vh;
+}
+
+nav a.active{
+text-decoration: underline;
+}
+
+nav a:hover{
+color: #b1c922;
+animation-name: animacio;
+animation-duration: 1s;
+}
+
+a{
+color: white;
+text-decoration: none;
+}
+
+.gallery{
+background-color: black;
+padding-left: 15px;
+padding-right: 15px;
+padding-bottom: 12px;
+}
+
+.gallery img{
+padding-top: 10px;
+}
+
+header img{
+max-height: 7vh;
+display: block;
+margin-left: auto;
+margin-right: auto;
+}
+
+p{
+margin: 0px 15px 0px 15px;
+}
+
+aside img{
+max-width: 100%;
+object-fit: cover;
+}
+
+@keyframes animacio{
+0% {color: white;}
+100% {color: #b1c922;}
+}
+
+.bevezeto h2{
+margin: 10px 15px 10px 15px;
+}
+
+h3{
+margin: 20px 15px 5px 15px;
+}
+
+.bevezeto{
+margin-bottom: 15px;
+}
+
+.tartalom{
+margin: 0;
+padding-bottom: 15px;
+}
+
+.gallery img:hover{
+opacity: 0.5;
+}
+
+table{
+width: 100%;
+}
+
+th{
+font-size: 1.3em;
+color: #b1c922;
+margin: 0px;
+text-align: center;
+padding: 10px;
+}
+
+.jobbcella{
+text-align: right;
+padding-right: 15px;
+}
+
+.balcella{
+padding-left: 15px;
+}
+
+.gomb{
+margin: 15px;
+padding: 10px;
+display: block;
+border: 2px solid white;
+border-radius: 3px;
+}
+
+.gomb:hover{
+animation-name: animacio2;
+animation-duration: 1s;
+background-color: white;
+color: #191919;
+}
+
+@keyframes animacio2{
+0% {color: white; background-color: #191919;}
+100% {color: #191919; background-color: white;}
+}
+
+table{
+border-collapse: collapse;
+}
+
+th, td{
+padding: 12px 15px;
+text-align: left;
+}
+
+tr:hover{
+animation-name: animacio;
+animation-duration: 1s;
+color: #b1c922;
+}
+        
+.gallery2{
+background-color: black;
+padding-left: 15px;
+padding-right: 15px;
+padding-bottom: 12px;
+}
+
+.gallery2 img{
+padding-top: 10px;
+}
+
+h2{
+margin: 15px 0px 0px 0px;
+}
+
+
+.form{
+margin-top: 20px;
+text-align: left;
+}
+
+.kgomb{
+margin: 15px 10px 40px 15px;
+padding: 10px;
+display: inline-block;
+color: white;
+background-color: #191919;
+border: 2px solid white;
+border-radius: 3px;
+}
+
+.kgomb:hover{
+animation-name: animacio3;
+animation-duration: 1s;
+background-color: green;
+border: 2px solid green;
+color: white;
+}
+
+@keyframes animacio3{
+0% {color: white; background-color: #191919;}
+100% {color: white; background-color: green; border=2px solid green;}
+}
+
+
+.reset{
+margin: 15px 0px 40px 0px;
+padding: 10px;
+display: inline-block;
+color: white;
+background-color: #191919;
+border: 2px solid white;
+border-radius: 3px;
+}
+
+.reset:hover{
+animation-name: animacio4;
+animation-duration: 1s;
+background-color: red;
+border: 2px solid red;
+color: white;
+}
+
+@keyframes animacio4{
+0% {color: white; background-color: #191919;}
+100% {color: white; background-color: red; border=2px solid red;}
+}
+
+.mezo{
+color: white;
+background-color: #191919;
+padding: 10px;
+margin: 5px 0px 20px 0px;
+display: block;
+border: 2px solid white;
+border-radius: 3px;
+}
+
+::placeholder{
+color: white;
+background-color: #191919;
+}
+
+.kisgomb{
+margin: 10px 3px 20px 15px;
+accent-color: #b1c922;
+}
+
+.ak:hover{
+color: #b1c922;
+animation-name: animacio;
+animation-duration: 1s;
+}
+
+.kisgomb2{
+margin: 10px 3px 20px 0px;
+accent-color: #b1c922;
+}
+
+.galleria {
+margin: auto;
+width: 100vh;
+height: 80vh;
+}
