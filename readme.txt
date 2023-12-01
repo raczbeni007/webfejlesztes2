@@ -4,8 +4,11 @@
 ———— Oldal készítője ————
 Körmendy-Rácz Bence
 
-———— Weboldal elérhetősége ————
+———— Weboldal elérhetőség ————
 https://raczbeni007.github.io/webfejlesztes2/index.html
+
+———— Github elérhetőség ————
+https://github.com/raczbeni007/webfejlesztes2
 
 ———— A weboldal témája ————
 A weboldal az építészetről szól, mely bemutatja annak legkiemelkedőbb alakjait. Fontos cél volt számomra, hogy az oldalon szereplő képek segítségével inspirálódhassunk, feltöltődhessünk művészettel.
