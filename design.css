@@ -273,3 +273,29 @@ margin: auto;
 width: 100vh;
 height: 80vh;
 }
+label.error{
+color: red;
+font-size: 0.8em;
+}
+
+.mezo{
+margin-bottom: 5px;
+}
+
+.szoveg{
+margin-top: 20px;
+}
+
+#elfogadas-error.error{
+margin: 0px 0px 20px 15px;
+
+}
+
+.adatkez{
+margin-top: 20px;
+margin-bottom: 0px;
+}
+
+input#elfogadas.kisgomb2.error{
+margin-bottom: 5px;
+}
