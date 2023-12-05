@@ -210,7 +210,7 @@ color: white;
 
 @keyframes animacio3{
 0% {color: white; background-color: #191919;}
-100% {color: white; background-color: green; border=2px solid green;}
+100% {color: white; background-color: green; border:2px solid green;}
 }
 
 
@@ -234,7 +234,7 @@ color: white;
 
 @keyframes animacio4{
 0% {color: white; background-color: #191919;}
-100% {color: white; background-color: red; border=2px solid red;}
+100% {color: white; background-color: red; border:2px solid red;}
 }
 
 .mezo{
