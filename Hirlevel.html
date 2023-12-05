@@ -11,6 +11,47 @@
     <link rel="stylesheet" href="design.css" >
     <link rel="icon" type="image/x-icon" href="logo.png" >
     <title>Hírlevél</title>
+
+    <script src="jquery-3.7.1.js"></script>
+    <script src="jquery.validate.js"></script>
+    <script>
+      $(document).ready(function () {
+        $("#myform").validate({
+          rules: {
+            vnev: "required",
+            knev: "required",
+            email: {
+              required: true,
+              email: true,
+            },
+            elfogadas: {
+              required: true,
+            },
+          },
+          messages: {
+            vnev: "Kérjük, töltse ki a Vezetéknév mezőt!",
+            knev: "Kérjük, töltse ki a Keresztnév mezőt!",
+            email: "Kérjük, valós email címet adjon meg!",
+            elfogadas: "Kérjük, fogadja el az Adatkezelési Tájékoztatót!",
+          },
+          errorPlacement: function (error, element) {
+            if (element.attr("name") == "elfogadas") {
+              // Create a new div element and insert it after the text element
+              var errorContainer = $(
+                "<div class='error-container'></div>"
+              ).insertAfter(element.closest("p"));
+              // Append the error message to the new div
+              errorContainer.append(error);
+            } else {
+              // Default placement for other elements
+              error.insertAfter(element);
+            }
+          },
+        });
+      });
+    </script>
+
+    <style></style>
   </head>
 
   <body>
@@ -40,7 +81,12 @@
       </article>
 
       <article class="form">
-        <form method="post" action="http://szamtud.uni-corvinus.hu/receive.php">
+        <form
+          method="post"
+          action="http://szamtud.uni-corvinus.hu/receive.php"
+          id="myform"
+          novalidate
+        >
           <p>
             <label
               >Megszólítás:
@@ -54,9 +100,9 @@
             >
           </p>
 
-          <p>
-            <label
-              >Vezetéknév:
+          <p class="szoveg">
+            <label for="vnev"
+              >Vezetéknév*:
               <input
                 type="text"
                 name="vnev"
@@ -64,12 +110,12 @@
                 size="30"
                 placeholder="Kérjük, írja ide vezetéknevét!"
                 class="mezo"
-                required
+                id="vnev"
             ></label>
           </p>
-          <p>
-            <label
-              >Keresztnév:
+          <p class="szoveg">
+            <label for="knev"
+              >Keresztnév*:
               <input
                 type="text"
                 name="knev"
@@ -77,28 +123,28 @@
                 size="30"
                 placeholder="Kérjük, írja ide keresztnevét!"
                 class="mezo"
-                required
+                id="knev"
             ></label>
           </p>
-          <p>
+          <p class="szoveg">
             <label
-              >Email cím:
+              >Email cím*:
               <input
                 type="email"
                 name="email"
                 size="30"
                 placeholder="Kérjük, írja ide email címét!"
                 class="mezo"
-                required
+                id="email"
             ></label>
           </p>
 
-          <p>
+          <p class="szoveg">
             <label
               >Születési dátum: <input type="date" name="szul" class="mezo"
             ></label>
           </p>
-          <p>Részt kíván venni építészet workshopjainkon?</p>
+          <p class="szoveg">Részt kíván venni építészet workshopjainkon?</p>
           <label
             ><input type="radio" name="workshop" value="i" class="kisgomb" >
             igen
@@ -126,13 +172,13 @@
                 class="mezo"
             ></label>
           </p>
-          <p>
-            <label
+          <p class="adatkez">
+            <label for="elfogadas"
               ><input
                 type="checkbox"
-                name="adatkezelesi tajekoztato"
                 value="i"
-                required
+                name="elfogadas"
+                id="elfogadas"
                 class="kisgomb2"
               >
               Az
@@ -142,7 +188,7 @@
                 class="ak"
                 >Adatkezelési Tájékoztatót</a
               >
-              megismertem és elfogadom.</label
+              megismertem és elfogadom*.</label
             >
           </p>
 
